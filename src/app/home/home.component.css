@@ -1,38 +1,24 @@
+#asd{
+  background-image: url(./greenpepper.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .logo {
+  width: 100%;
+  padding: 10%;
+  border: 20% solid black;
+  color: blueviolet;
+  margin: 0;
   background-image: url(./rice.jpg);
-  background-image: url(./bellpepper.jpg);
-}
-  #h {
-    width:100%;
-    float:left;
-    text-align:center;
-    background-color: snow;
-    font-family: cambria;
-  }
 
-  * {
-    box-sizing: border-box;
-  }
-  
-  .column {
-    float: left;
-    width: 33.33%;
-    padding: 15px;
-  }
-  
-  /* Clearfix (clear floats) */
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-  /* #cam {
-    text-align: center;
 }
-.warm {
-        background-color: green; /* Green */
-        /* border-radius: none;
+
+.h {
+  text-align: center;
+}
+#warm {
+        background-color: green; 
+        border-radius: none;
         color: white;
         padding: 15px 32px;
         font-size: 16px;
@@ -45,4 +31,22 @@
     a:link {
         
         text-decoration: none;
-      } */
+      } 
+
+      /* services section css */
+.servicesText.card {
+  cursor: pointer;
+}
+.servicesIcon {
+  text-align: center;
+  width: 100%;
+}
+.card-title {
+  text-align: center;
+}
+.card:hover .servicesIcon {
+  color: black;
+}
+.servicesText:hover {
+  border: 1px solid #008000;
+}

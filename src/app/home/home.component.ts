@@ -12,6 +12,8 @@ export class HomeComponent implements OnInit {
       //image location
       this.ImagePath = '/assets/images/rice.jpg'
       this.ImagePath =  '/assets/images/images/bellpepper.jpg'
+      this.ImagePath =  '/assets/images/images/egg.jpeg'
+    
     }
    
   ngOnInit(): void {
