@@ -50,3 +50,13 @@
 .servicesText:hover {
   border: 1px solid #008000;
 }
+
+
+[data-component="slideshow"] .slide {
+  display: none;
+}
+
+[data-component="slideshow"] .slide.active {
+  display: block;
+}
+
