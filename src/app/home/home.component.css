@@ -1,5 +1,5 @@
 #asd{
-  background-image: url(./greenpepper.jpeg);
+  background-image: url();
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -10,7 +10,9 @@
   color: blueviolet;
   margin: 0;
   background-image: url(./rice.jpg);
-
+  background-image:url(./AgroVesto.jpg);
+  background-image: url(./AgroVesto.jpg);
+  border-image-width: auto;
 }
 
 .h {
@@ -50,13 +52,3 @@
 .servicesText:hover {
   border: 1px solid #008000;
 }
-
-
-[data-component="slideshow"] .slide {
-  display: none;
-}
-
-[data-component="slideshow"] .slide.active {
-  display: block;
-}
-
