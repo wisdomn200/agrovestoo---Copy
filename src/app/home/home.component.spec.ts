@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { Slideshow } from "./slideshow";
+ 
 
 import { HomeComponent } from './home.component';
 

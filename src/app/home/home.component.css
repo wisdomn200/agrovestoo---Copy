@@ -3,19 +3,22 @@
     width:100%;
     float:left;
     text-align:center;
-    background-color: rgb(43, 40, 40);
+    background-color: slategray;
     top: 0px;
+    height: 300px;
   }
+
   #logo
   { 
-    width:30%;
+    width:100%;
     float: center;
+    background-color: rgb(43, 40, 40);
   }
-  #logo h1
+  #logo h5
   {
     cursor:pointer;
     transition:1s;
-    color:violet;
+    color: white;
     font-family:cambria;
   }
   #logo h1:hover
@@ -23,6 +26,13 @@
     color:black;
   }
   
+ #w3-content  {
+  background-image: url(./greenpepper.jpeg);
+  background-image: url(./rice.jpg);
+  background-image: url(./bellpepper.jpg);
+ }
+
+
   @media only screen and (max-width: 590px) {
     #header
     {
