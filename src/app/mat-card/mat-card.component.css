@@ -1,28 +1,80 @@
 
       /* services section css */
-      .servicesText.card {
-        cursor: pointer;
+      #header
+      {
+        width:100%;
+        float:left;
+        text-align:center;
+        background-color: slategray;
+        background-image: url(./Rectangle.jpg);
+        top: 0px;
+        height: 300px;
       }
-      .servicesIcon {
-        text-align: center;
-        width: 100%;
+    
+      #logo
+      { 
+        width:100%;
+        float: center;
+        background-color: rgb(43, 40, 40);
       }
-      .card-title {
-        text-align: center;
+      #logo h5
+      {
+        cursor:pointer;
+        transition:1s;
+        color: white;
+        font-family:cambria;
       }
-      .card:hover .servicesIcon {
-        color: black;
+      #logo h1:hover
+      {
+        color:black;
       }
-      .servicesText:hover {
-        border: 1px solid #008000;
-      }
-      .container {
-        display: flex;
-      }
-  .item {
-    background: #ce8888;
-    flex-basis: 250px;
-    height: 120px;
-    margin: 5px;
-  }
       
+     #w3-content  {
+     background-image: url(./Rectangle.webp);
+     width: 200px;
+     height: 100px;
+     }
+     #w3-content h1 {
+       color: white;
+     }
+    
+    
+      @media only screen and (max-width: 590px) {
+        #header
+        {
+          font-size:14px;
+        }
+        #logo
+        {
+          width:100%;
+          float:left;
+          text-align:center;
+        }
+        #menu
+        {
+          width:100%;
+          margin: 0 auto;
+        }
+        #menu ul
+        {
+          float:none;
+          margin-right:0px;
+        }
+      }
+      @media only screen and (max-width: 320px) {
+        #header
+        {
+          font-size:12px;
+        }
+        #logo h1
+        {
+          margin-bottom:1%;
+      
+        }
+          #menu ul li
+        {
+          display:block;
+        }
+       }
+      
+    
