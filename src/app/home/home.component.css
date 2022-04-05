@@ -117,7 +117,7 @@
 .flex-container {
   display: flex;
   flex-wrap: nowrap;
-  background-color: darkslateblue;
+  background-color: rgb(43, 40, 40);
   
 
 }
@@ -154,3 +154,4 @@
 
   }
  }
+ .mySlides {display:none;}
