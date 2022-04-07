@@ -124,69 +124,75 @@
   padding: 15pz;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+
 .flex-container {
   display: flex;
   flex-wrap: nowrap;
+  flex-direction: row;
+  overflow-x: auto;
   background-color: rgb(43, 40, 40);
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 10px;
-  margin-right: 10px;
-
+  margin-right: 20px;
+  width: fit-content;
+  height: 250px;
 }
 
 .flex-container > div {
   background-color: #f1f1f1;
-  height: 150px;
+  height: 200px;
   margin: 10px;
   padding: 10px;
+  display: block;
 }
 
-@media (max-width: 992px) {
-  .flex-container {
-      display: flex;
-      flex-wrap: nowrap;
-      height: 300px;
-      overflow-x: auto;
-      width: auto;
-      margin-top: 5px;
-      margin-bottom: 5px;
-      margin-left: 5px;
-      margin-right: 5px;
-      
-  }
 
-  .inner {
-    width:auto;
-    height: auto;
-    font-size: 14px;
-    display: flex;
-    flex-wrap: nowrap;
-    padding: 50px;
-    padding-bottom: 50px;
+  
+@media (max-width: 800px) {
+  .flex-container {
+
+    width: auto;
+    height: 230px;
   }
+  .flex-container > div {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    background-color: #f1f1f1;
+    height: 200px;
+    margin: 10px;
+    display: grid;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    width: 100px;
+  }
+ 
 
   .inner > h3 {
     text-align: justify;
   }
-  .inner > p {
+  .inner > h4 {
       text-align: justify;
+      top: -150px;
   }
 }
 
 
-@media (max-width: 800px) {
-  .flex-container {
-    flex-direction: row;
-  }
-
-  #inner {
-    width:100%;
-    display: in-block;
-    height: 100%;
-    font-size:14px;
-  }
-}
 @media only screen and (max-width: 320px) {
   .flex-container {
     flex-direction: column;
@@ -199,4 +205,5 @@
 
   }
  }
- .mySlides {display:none;}
+ .mySlides {display:none;
+}
