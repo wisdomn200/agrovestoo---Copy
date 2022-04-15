@@ -1,150 +1,33 @@
+.container {
+  max-width: 1335px;
+  margin: 0 auto;
+}
+.grid-row {
+  display: flex;
+  flex-flow: row overflow;
+  justify-content: flex-start;
+}
 
-      /* services section css */
-      #header
-      {
-        width:100%;
-        float:left;
-        text-align:center;
-        background-color: slategray;
-        background-image: url(./Rectangle.jpg);
-        top: 0px;
-        height: 300px;
-      }
-    
-      #logo
-      { 
-        width:100%;
-        float: center;
-        background-color: rgb(43, 40, 40);
-      }
-      #logo h5
-      {
-        cursor:pointer;
-        transition:1s;
-        color: white;
-        font-family:cambria;
-      }
-      #logo h1:hover
-      {
-        color:black;
-      }
-      
-     #w3-content  {
-     background-image: url(./Rectangle.webp);
-     width: 200px;
-     height: 100px;
-     }
-     #w3-content h1 {
-       color: white;
-     }
-    
-    
-      @media only screen and (max-width: 590px) {
-        #header
-        {
-          font-size:14px;
-        }
-        #logo
-        {
-          width:100%;
-          float:left;
-          text-align:center;
-        }
-        #menu
-        {
-          width:100%;
-          margin: 0 auto;
-        }
-        #menu ul
-        {
-          float:none;
-          margin-right:0px;
-        }
-      }
-      @media only screen and (max-width: 320px) {
-        #header
-        {
-          font-size:12px;
-        }
-        #logo h1
-        {
-          margin-bottom:1%;
-      
-        }
-          #menu ul li
-        {
-          display:block;
-        }
-       }
-      
-
-       .flex-container {
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        overflow-x: auto;
-        background-color: rgb(43, 40, 40);
-        margin-top: 10px;
-        margin-bottom: 10px;
-        margin-left: 10px;
-        margin-right: 10px;
-        width: fit-content;
-      
-      }
-      
-      .flex-container > div {
-        background-color: #f1f1f1;
-        height: 100px;
-        margin: 10px;
-        padding: 10px;
-      }
-      
-      
-        
-      @media (max-width: 800px) {
-        .flex-container {
-      
-          width: auto;
-          height: 230px;
-        }
-        .flex-container > div {
-          flex-wrap: nowrap;
-          flex-direction: row;
-          background-color: #f1f1f1;
-          height: 200px;
-          margin: 10px;
-          display: block;
-          margin-top: 5px;
-          margin-bottom: 10px;
-          margin-right: 5px;
-          width: 100px;
-        }
-       
-      
-       
-      
-        .inner > h3 {
-          text-align: justify;
-        }
-        .inner > h4 {
-            text-align: justify;
-            top: -150px;
-        }
-      }
-      
-      
-      @media only screen and (max-width: 320px) {
-        .flex-container {
-          flex-direction: column;
-        }
-        #inner {
-          width:100%;
-          display: flex;
-          height: 100%;
-          font-size:14px;
-      
-        }
-       }
-       .mySlides {display:none;
-      }
-      
+.grid-item {
+  height: 350px;
+  display: flex;
+  flex-flow: row overflow;
+  justify-content: flex-start;
+  flex-basis: 100%;
+  -ms-flex: auto;
+  width: 259px;
+  position: relative;
+  padding: 10px;
+  background-color: black;
+  box-sizing: border-box;
+}
+@media(min-width: 1073px) {
+  .grid-item {
+    flex-basis: 33.33%;
+  }
+}
+@media(min-width: 815px) {
+  .grid-item {
+    flex-basis: 50%;
+  }
+}

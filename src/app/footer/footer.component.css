@@ -1,81 +1,109 @@
-footer{
-    position: absolute;
-    background: #111;
-    height: auto;
-    width: 100%;
-    padding-top: 10px;
-    color: #fff;
-    
+#header
+{
+  width:100%;
+  float:left;
+  text-align:center;
+  background-color: rgb(43, 40, 40);
+  top: 0px;
 }
-.footer-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+#logo
+{ 
+  width:30%;
+  float:left;
+  text-align: center;
+}
+#logo h3
+{
+  text-align: center;
+  cursor:pointer;
+  transition:1s;
+  color:white;
+  font-family:cambria;
+}
+#logo h3:hover
+{
+  color:black;
+}
+
+#logo p
+{
+  cursor:pointer;
+  transition:1s;
+  color:white;
+  font-family:cambria;
+  text-align: center;
+}
+#logo p:hover
+{
+  color:black;
+}
+
+#menu
+{
+  float:left;
+  width:70%;
+}
+#menu ul
+{
+    margin-right: 10%;
+    padding: 0;
+    float:right;
     text-align: center;
 }
-
-.footer-content p{
-    max-width: 500px;
-    margin: 10px auto;
-    line-height: 28px;
-    font-size: 14px;
-    color: #cacdd2;
+#menu ul li
+{
+cursor:pointer;
+list-style-type:none;
+display:inline-block;
+padding:8px;
 }
 
-.socials{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0 3rem 0;
+#menu ul li a
+{
+  font-family:cambria;
+text-decoration:none;
+color:white;
+font-size:20px;
+}
+#menu ul li a:hover
+{
+color:black;
 }
 
-.socials li{
-    margin: 0 10px;
+@media only screen and (max-width: 590px) {
+  #header
+  {
+    font-size:14px;
+  }
+  #logo
+  {
+    width:100%;
+    float:left;
+    text-align:center;
+  }
+  #menu
+  {
+    width:100%;
+    margin: 0 auto;
+  }
+  #menu ul
+  {
+    float:none;
+    margin-right:0px;
+  }
 }
+@media only screen and (max-width: 320px) {
+  #header
+  {
+    font-size:12px;
+  }
+  #logo h3
+  {
+    margin-bottom:1%;
 
-.socials a{
-    text-decoration: none;
-    color: #fff;
-    border: 1.1px solid white;
-    padding: 5px;
-    border-radius: 50%;
-}
-
-.socials a i{
-    font-size: 1.1rem;
-    width: 20px;
-    transition: color .4s ease;
-}
-
-.socials a:hover i{
-    color: aqua;
-}
-
-.footer-bottom{
-    background: darkgreen;
-    width: 100vw;
-    padding: 20px;
-    padding-bottom: 40px;
-    text-align: center;
-}
-.footer-bottom p{
-    float: center;
-    font-size: 14px;
-    word-spacing: 2px;
-    text-transform: capitalize;
+  }
+    #menu ul li
+  {
+    display:block;
+  }
  }
- .footer-bottom p a{
-   color: whitesmoke;
-   font-size: 16px;
-   text-decoration: none;
- }
- .footer-bottom span{
-     text-transform: uppercase;
-     opacity: .4;
-     font-weight: 200;
- }
-
-  
- 

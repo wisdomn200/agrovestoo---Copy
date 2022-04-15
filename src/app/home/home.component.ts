@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Slideshow } from "./slideshow";
  
-console.log(Slideshow);
 
 @Component({
   selector: 'app-home',
